@@ -1,0 +1,98 @@
+/* 组件化多选列表 标准板页   JS版
+<div class="checkbox_list">
+<span>
+    <input type="checkbox" />全选
+    <span>0/0</span>
+</span>
+<span>
+    <input type="text" placeholder="请输入城市拼音" />
+    <i class="fa fa-search"></i>
+</span>
+<span>
+    <ul>
+        <li>
+            <i class="fa fa-square-o"></i>
+            选项1
+        </li>
+    </ul>
+</span>
+</div> */
+
+
+.checkbox_list {
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 320px;
+    border-radius: 5px; 
+}
+.checkbox_list > span:nth-child(1) {
+    display: block;
+    background-color: rgb(245, 247, 250);
+    height: 42px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    line-height: 42px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.checkbox_list > span:nth-child(1) span {
+    float: right;
+    margin-right: 10px;
+    color: rgba(0, 0, 0,0.5);
+    font-size: 14px;
+
+}
+.checkbox_list > span:nth-child(2) {
+    position: relative;
+}
+
+.checkbox_list > span:nth-child(3) {
+    display: block;
+    height: 210px;
+    overflow: auto;
+}
+.checkbox_list [type = text] {
+    margin: 15px 8px;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    line-height: 30px;
+    padding-left: 30px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.checkbox_list span:nth-child(2) i {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.checkbox_list li:hover  {
+    cursor: pointer;  
+    color: rgb(64, 158, 255) !important;
+}
+.checkbox_list span:nth-child(1):hover {
+    cursor: pointer;
+    color: rgb(64, 158, 255) !important;
+    
+}
+
+
+.checkbox_list [type = text]:focus {
+    outline: none;
+    border: 1px solid rgb(64, 158, 255);
+}
+
+.checkbox_list span:nth-child(1) i,
+.checkbox_list span:nth-child(3) i {
+    margin: 0px 8px 13px 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.checkbox_list span:nth-child(3) {
+    color: rgba(0, 0, 0, 0.7);
+}
+.fa-square-o {
+    font-size: 17px;
+}
