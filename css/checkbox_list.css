@@ -1,22 +1,23 @@
 /* 组件化多选列表 标准板页   JS版
 <div class="checkbox_list">
-<span>
-    <input type="checkbox" />全选
-    <span>0/0</span>
-</span>
-<span>
-    <input type="text" placeholder="请输入城市拼音" />
-    <i class="fa fa-search"></i>
-</span>
-<span>
-    <ul>
-        <li>
-            <i class="fa fa-square-o"></i>
-            选项1
-        </li>
-    </ul>
-</span>
-</div> */
+        <span>
+            <i class="fa fa-square-o"></i>全选
+            <span>0/0</span>
+        </span>
+        <span>
+            <input type="text" placeholder="提示信息" />
+            <i class="fa fa-search"></i>
+        </span>
+        <span>
+            <ul>
+                <li>
+                    <i class="fa fa-square-o"></i>
+                    选项1
+                </li>
+            </ul>
+        </span>
+    </div>
+ */
 
 
 .checkbox_list {
@@ -51,6 +52,11 @@
     display: block;
     height: 210px;
     overflow: auto;
+}
+.checkbox_list > span:nth-child(3) ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .checkbox_list [type = text] {
     margin: 15px 8px;
